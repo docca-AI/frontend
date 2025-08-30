@@ -58,7 +58,7 @@ h2 {
   font-family: var(--font-heading-2);
   font-weight: 600;
   font-size: 28px;
-  /* color: var(--color-secondary); */
+  color: var(--color-primary);
 }
 
 h3 {
