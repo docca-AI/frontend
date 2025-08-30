@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 const Footer = () => (
-  <footer className="bg-gray-800 text-gray-300 py-16">
+  <footer className="bg-neutral-dark text-gray-300 py-16">
     <div className="container mx-auto px-4">
       <div className="grid gap-12 md:grid-cols-4">
         <div>
@@ -77,15 +77,23 @@ const Footer = () => (
           <h4 className="mb-4 text-lg font-semibold text-white">Contact</h4>
           <ul className="space-y-2 text-sm">
             <li className="flex items-center space-x-2">
-              <a href="mailto:support@docca.com.ng" className="flex items-center space-x-2 ">
+              <a
+                href="mailto:support@docca.com.ng"
+                className="flex items-center space-x-2 "
+              >
                 <Mail size={16} />
                 <span>support@docca.com.ng</span>
               </a>
             </li>
             <li className="flex items-center space-x-2">
-              <a href="https://wa.me/23480036222" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 ">
+              <a
+                href="https://wa.me/23480036222"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 "
+              >
                 <img src={WhatsApp} size={16} />
-              <span>+234 800 DOCCA</span>
+                <span>+234 800 DOCCA</span>
               </a>
             </li>
             <li className="flex items-center space-x-4 pt-2">
