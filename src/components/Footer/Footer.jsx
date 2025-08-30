@@ -1,5 +1,5 @@
 import Logo from "../../assets/images/Logo.png";
-import WhatsApp from "../../assets/images/whatsApp.svg";
+import WhatsApp from "../../assets/images/WhatsApp.svg";
 import {
   Mail,
   X,
