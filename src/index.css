@@ -9,18 +9,26 @@
   --color-info: var(--color-info);
   --color-neutral-dark: var(--color-neutral-dark);
   --color-light-gray: var(--color-light-gray);
+  --bg-primary: var(--bg-primary);
+  --bg-secondary: var(--bg-secondary);
+  --bg-tertiary: var(--bg-tertiary);
+  --bg-accent: var(--bg-accent);
 }
 
 :root {
   --color-primary: #1E90FF;
   --color-secondary: #2ECC71;
-  --color-gradient-accent-from: #1E90FF;
-  --color-gradient-accent-to: #2ECC71;
   --color-neutral-dark: #333333;
   --color-warning: #F39C12;
   --color-error: #E74C3C;
   --color-info: #3498DB;
   --color-light-gray: #E5E5E5;
+
+  --bg-primary: #F9FAFB;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #333333;
+  --bg-accent: #eaf1f7;
+
 
   --font-heading-1: 'Poppins', sans-serif;
   --font-heading-2: 'Poppins', sans-serif;
@@ -39,7 +47,7 @@
 /* Headings */
 h1 {
   font-family: var(--font-heading-1);
-  font-weight: 700;
+  font-weight: 900;
   font-size: 36px;
   color: var(--color-primary);
 }
@@ -48,14 +56,14 @@ h2 {
   font-family: var(--font-heading-2);
   font-weight: 600;
   font-size: 28px;
-  color: var(--color-secondary);
+  /* color: var(--color-secondary); */
 }
 
 h3 {
   font-family: var(--font-heading-3);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
-  color: var(--color-neutral-dark);
+  /* color: var(--color-primary); */
 }
 
 /* Body text */
@@ -85,8 +93,9 @@ cursor: pointer;
 
 /* Gradient accent utility */
 .bg-gradient-accent {
-  background: linear-gradient(90deg, var(--color-gradient-accent-from), var(--color-gradient-accent-to));
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
 }
+
 
 /* Layout */
 .container {

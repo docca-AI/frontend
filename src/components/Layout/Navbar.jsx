@@ -19,11 +19,10 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <div className="container">
-        <div className="container mx-auto flex items-center justify-between p-4 md:p-6">
+        <div className="flex items-center justify-between p-4 md:p-6">
           {/* Logo */}
           <a href="#" className="flex items-center">
-            <div className="bg-gradient-to-r from-primary to-secondary p-3 rounded-md mr-2">
+            <div className="bg-gradient-accent p-3 rounded-md mr-2">
               <img src={Logo} className="h-4 w-4" alt="DOCCA Logo" />
             </div>
             <span className="text-2xl font-extrabold">DOCCA</span>
@@ -142,7 +141,6 @@ const Navbar = () => {
             </div>
           </div>
         )}
-      </div>
     </nav>
   );
 };

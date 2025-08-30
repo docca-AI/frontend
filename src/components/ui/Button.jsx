@@ -1,6 +1,6 @@
 export default function Button({ variant = "primary", size = "md", children }) {
   const base =
-    "rounded-md font-medium transition duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer";
+    "flex justify-center items-center rounded-md font-medium transition duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer";
 
   const sizes = {
     sm: "px-3 py-1 text-sm",
