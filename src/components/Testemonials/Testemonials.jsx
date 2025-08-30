@@ -11,7 +11,7 @@ const Testimonials = () => (
     className="py-16 md:py-24"
   >
     <div className="container mx-auto px-4">
-      <h2 className="mb-4 text-center text-3xl font-bold">
+      <h2 className="mb-4 text-center text-primary text-3xl font-bold">
         What Our Users Say
       </h2>
       <p className="mb-12 text-center text-lg text-gray-600">

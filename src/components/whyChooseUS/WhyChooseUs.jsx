@@ -18,7 +18,7 @@ const WhyChooseUs = () => (
     className="bg-[#E5E7EB] py-16 md:py-24"
   >
     <div className="container mx-auto px-4">
-      <h2 className="mb-4 text-center ">Why Choose DOCCA?</h2>
+      <h2 className="mb-4 text-center text-primary">Why Choose DOCCA?</h2>
       <p className="mb-12 text-center text-lg text-gray-600">
         Healthcare made accessible for everyone
       </p>

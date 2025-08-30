@@ -10,6 +10,7 @@
   --color-info: var(--color-info);
   --color-neutral-dark: var(--color-neutral-dark);
   --color-light-gray: var(--color-light-gray);
+  --bg-gradient-accent: var(--bg-gradient-accent);
   --bg-primary: var(--bg-primary);
   --bg-secondary: var(--bg-secondary);
   --bg-tertiary: var(--bg-tertiary);
@@ -58,7 +59,7 @@ h2 {
   font-family: var(--font-heading-2);
   font-weight: 600;
   font-size: 28px;
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
 }
 
 h3 {
@@ -73,7 +74,7 @@ body, p {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 16px;
-  color: var(--color-neutral-dark);
+  /* color: var(--color-neutral-dark); */
 }
 
 /* Links */
