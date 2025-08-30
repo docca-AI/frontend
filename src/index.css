@@ -1,0 +1,145 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-warning: var(--color-warning);
+  --color-error: var(--color-error);
+  --color-info: var(--color-info);
+  --color-neutral-dark: var(--color-neutral-dark);
+  --color-light-gray: var(--color-light-gray);
+}
+
+:root {
+  --color-primary: #1E90FF;
+  --color-secondary: #2ECC71;
+  --color-gradient-accent-from: #1E90FF;
+  --color-gradient-accent-to: #2ECC71;
+  --color-neutral-dark: #333333;
+  --color-warning: #F39C12;
+  --color-error: #E74C3C;
+  --color-info: #3498DB;
+  --color-light-gray: #E5E5E5;
+
+  --font-heading-1: 'Poppins', sans-serif;
+  --font-heading-2: 'Poppins', sans-serif;
+  --font-heading-3: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --max-width: 1200px;
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+  --spacing-5: 32px;
+}
+
+/* Headings */
+h1 {
+  font-family: var(--font-heading-1);
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--color-primary);
+}
+
+h2 {
+  font-family: var(--font-heading-2);
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--color-secondary);
+}
+
+h3 {
+  font-family: var(--font-heading-3);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-neutral-dark);
+}
+
+/* Body text */
+body, p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-neutral-dark);
+}
+
+/* Links */
+a {
+  font-family: var(--font-body);
+  font-weight: 400;
+  /* font-size: 16px; */
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--color-secondary);
+}
+
+button {
+cursor: pointer;
+}
+
+/* Gradient accent utility */
+.bg-gradient-accent {
+  background: linear-gradient(90deg, var(--color-gradient-accent-from), var(--color-gradient-accent-to));
+}
+
+/* Layout */
+.container {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-4);
+  padding-right: var(--spacing-4);
+}
+
+/* Grid system */
+.grid-desktop {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-3);
+}
+.grid-mobile {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-2);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: var(--spacing-2);
+    padding-right: var(--spacing-2);
+  }
+  .grid-desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Spacing utilities */
+.mt-1 { margin-top: var(--spacing-1); }
+.mt-2 { margin-top: var(--spacing-2); }
+.mt-3 { margin-top: var(--spacing-3); }
+.mt-4 { margin-top: var(--spacing-4); }
+.mt-5 { margin-top: var(--spacing-5); }
+
+.mb-1 { margin-bottom: var(--spacing-1); }
+.mb-2 { margin-bottom: var(--spacing-2); }
+.mb-3 { margin-bottom: var(--spacing-3); }
+.mb-4 { margin-bottom: var(--spacing-4); }
+.mb-5 { margin-bottom: var(--spacing-5); }
+
+.pt-1 { padding-top: var(--spacing-1); }
+.pt-2 { padding-top: var(--spacing-2); }
+.pt-3 { padding-top: var(--spacing-3); }
+.pt-4 { padding-top: var(--spacing-4); }
+.pt-5 { padding-top: var(--spacing-5); }
+
+.pb-1 { padding-bottom: var(--spacing-1); }
+.pb-2 { padding-bottom: var(--spacing-2); }
+.pb-3 { padding-bottom: var(--spacing-3); }
+.pb-4 { padding-bottom: var(--spacing-4); }
+.pb-5 { padding-bottom: var(--spacing-5); }
