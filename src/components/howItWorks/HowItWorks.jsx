@@ -49,7 +49,7 @@ const HowItWorks = () => (
           <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-md bg-secondary">
             <img src={Heart} alt="Heart" className="h-6 w-6" />
           </div>
-          <h3 className="mb-2 text-primary text-xl font-bold">
+          <h3 className="mb-2 text-primary">
             2. Get AI Analysis
           </h3>
           <p className="text-center">
@@ -64,7 +64,7 @@ const HowItWorks = () => (
           <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-md bg-warning">
             <img src={Flag} alt="Flag" className="h-6 w-6 " />
           </div>
-          <h3 className="mb-2 text-primary text-xl font-bold">
+          <h3 className="mb-2 text-primary">
             3. Find Care Nearby
           </h3>
           <p className="text-center">
