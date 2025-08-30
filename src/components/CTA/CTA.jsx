@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Button from "../ui/Button";
-import Float from "../../assets/images/Float.svg";
+import Float from "../../assets/images/float.svg";
 import { sectionVariants } from "../ui/Animation";
 
 const CTA = () => (

@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Chat from "../../assets/images/Chat.svg";
+import Chat from "../../assets/images/chat.svg";
 import Mic from "../../assets/images/Mic.svg";
-import Settings from "../../assets/images/Settings.svg";
+import Settings from "../../assets/images/settings.svg";
 import Location from "../../assets/images/Location.svg";
-import Signal from "../../assets/images/Signal.svg";
-import Shield from "../../assets/images/Shield.svg";
+import Signal from "../../assets/images/signal.svg";
+import Shield from "../../assets/images/shield.svg";
 import { sectionVariants, staggerContainer } from "../ui/Animation";
 import { FeatureCard } from "../ui/Cards";
 
