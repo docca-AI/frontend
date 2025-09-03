@@ -19,7 +19,45 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <div className="flex items-center justify-between p-4 md:p-6">
+      {/* Mobile Navbar */}
+      <div className="flex items-center justify-between p-4 md:hidden">
+        {/* Hamburger Left */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="p-2 cursor-pointer"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+        {/* Logo Center */}
+        <NavLink to="/" className="flex items-center absolute left-1/2 transform -translate-x-1/2">
+          <div className="bg-gradient-accent p-2 rounded-md mr-2">
+            <img src={Logo} className="h-2 w-2" alt="DOCCA Logo" />
+          </div>
+          <span className="text-md font-bold">DOCCA</span>
+        </NavLink>
+
+        {/* Language Switch Right */}
+        <div className="flex items-center space-x-1">
+          <span className="text-sm font-medium">EN</span>
+          <button
+            onClick={() => setLanguage(language === "EN" ? "PID" : "EN")}
+            className="relative inline-flex h-4 w-6 items-center bg-light-gray rounded-full transition-colors duration-300 cursor-pointer"
+          >
+            <span
+              className={`inline-block h-2 w-2 transform rounded-full transition-transform duration-300 ${
+                language === "EN"
+                  ? "translate-x-1 bg-primary"
+                  : "translate-x-3 bg-secondary"
+              }`}
+            />
+          </button>
+          <span className="text-sm font-medium">PID</span>
+        </div>
+      </div>
+
+      {/* Desktop Navbar */}
+      <div className="hidden md:flex items-center justify-between p-4 md:p-6">
         {/* Logo */}
         <NavLink to="/" className="flex items-center">
           <div className="bg-gradient-accent p-3 rounded-md mr-2">
@@ -74,16 +112,6 @@ const Navbar = () => {
             SignUp
           </Button>
         </div>
-
-        {/* Mobile Hamburger */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="p-2 cursor-pointer"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -108,24 +136,6 @@ const Navbar = () => {
 
           {/* Mobile actions */}
           <div className="mt-4 border-t pt-4">
-            {/* Language toggle */}
-            <div className="flex justify-center space-x-2 rounded-full border border-gray-300 p-1 mb-4">
-              <span className="text-sm font-medium">EN</span>
-              <button
-                onClick={() => setLanguage(language === "EN" ? "PID" : "EN")}
-                className="relative inline-flex h-6 w-11 items-center bg-light-gray rounded-full transition-colors duration-300"
-              >
-                <span
-                  className={`inline-block h-4 w-4 transform rounded-full transition-transform duration-300 ${
-                    language === "EN"
-                      ? "translate-x-1 bg-primary"
-                      : "translate-x-6 bg-secondary"
-                  }`}
-                />
-              </button>
-              <span className="text-sm font-medium">PID</span>
-            </div>
-
             <div className="flex items-center justify-center space-x-6">
               <Button variant="tertiary" size="md">
                 LogIn
