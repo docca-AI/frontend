@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { X, Mic, Stethoscope, User, Send } from "lucide-react";
 import Bot from "../../../assets/images/Bot.svg";
 import Button from "../../ui/Button";
+import { VoiceInput } from "../../../components/ui/Input";
 
 const AiDoccaChat = () => {
   const [message, setMessage] = useState("");
@@ -22,10 +23,10 @@ const AiDoccaChat = () => {
   };
 
   return (
-    <div className="w-full flex justify-center">
-      <div className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg border border-gray-200 p-6">
+    // <div className="w-full flex justify-center">
+      <div className="container items-center gap-8 px-4 md:flex-row md:gap-16">
         {/* AI Assistant Header with Buttons */}
-        <div className="flex items-center justify-between gap-3 border-b border-gray-200 pb-4 mb-4">
+        <div className="flex items-center justify-between gap-3 px-6">
           <div className="flex items-center gap-3">
             <div className="p-1 rounded-lg bg-primary text-white flex items-center justify-center w-9 h-9">
               <img
@@ -45,9 +46,10 @@ const AiDoccaChat = () => {
             <X className=" text-gray-500" size={16} />
           </div>
         </div>
+        <div className="divider"></div>
 
         {/* First Message - AI */}
-        <div className="flex justify-start gap-2 mb-4">
+        <div className="flex justify-start gap-2 mb-4 ">
           <div className="p-1 rounded-full bg-primary text-white flex items-center justify-center w-9 h-9">
             <img
               src={Bot}
@@ -159,13 +161,13 @@ const AiDoccaChat = () => {
         {/* Message Input Field */}
         <div className="flex gap-2 mb-4">
           <div className="flex-1 relative">
-            <input
-              type="text"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              placeholder="Type your message or symptoms..."
-              className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
+            <VoiceInput
+            // type="text"
+            // value={message}
+            // onChange={(e) => setMessage(e.target.value)}
+            // placeholder="Type your message or symptoms..."
+            // className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            // onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
             />
             <button
               onClick={handleVoiceInput}
@@ -204,7 +206,7 @@ const AiDoccaChat = () => {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 

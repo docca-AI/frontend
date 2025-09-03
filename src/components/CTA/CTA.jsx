@@ -12,9 +12,9 @@ const CTA = () => (
     className="bg-gradient-to-r from-[#1a73e8] to-[#34a853] py-16 text-white md:py-24"
   >
     <div className="container mx-auto text-center justify-center items-center flex flex-col px-4">
-      <h2 className="mb-4 text-white font-bold md:text-5xl">
+      <h1 className="mb-4 text-white font-bold md:text-5xl">
         Try DOCCA Now — It's Easy!
-      </h2>
+      </h1>
       <p className="mb-8 text-white text-lg md:text-xl">
         Join thousands of Nigerians taking control of their health
       </p>

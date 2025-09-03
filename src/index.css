@@ -36,6 +36,7 @@
   --font-heading-1: 'Poppins', sans-serif;
   --font-heading-2: 'Poppins', sans-serif;
   --font-heading-3: 'Inter', sans-serif;
+  --font-heading-4: 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
 
   --max-width: 1200px;
@@ -50,31 +51,40 @@
 /* Headings */
 h1 {
   font-family: var(--font-heading-1);
-  font-weight: 900;
+  font-weight: 700;
   font-size: 36px;
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
 }
 
 h2 {
   font-family: var(--font-heading-2);
   font-weight: 600;
-  font-size: 28px;
-  /* color: var(--color-primary); */
+  font-style: bold;
+  font-size: 30px;
+  color: var(--color-secondary);
 }
 
 h3 {
   font-family: var(--font-heading-3);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
-  /* color: var(--color-primary); */
+  /* font-style: ; */
+  color: var(--color-neutral-dark);
+}
+
+h4 {
+  font-family: var(--font-heading-4);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-primary);
 }
 
 /* Body text */
-body, p {
+body {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 16px;
-  /* color: var(--color-neutral-dark); */
+  color: var(--color-neutral-dark);
 }
 
 /* Links */

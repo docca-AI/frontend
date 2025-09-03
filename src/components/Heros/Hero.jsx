@@ -21,7 +21,7 @@ const Hero = () => (
         className="w-full md:w-1/2"
       >
         <div className="md:w-120 ">
-          <h1 className="mb-4  leading-tight">
+          <h1 className="text-primary mb-4  leading-tight">
             Your Health, Your Language, Your Community
           </h1>
           <p className="mb-6">
