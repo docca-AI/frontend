@@ -24,7 +24,7 @@ const AiDoccaChat = () => {
 
   return (
     // <div className="w-full flex justify-center">
-      <div className="container items-center gap-8 px-4 md:flex-row md:gap-16">
+      <div className="container items-center gap-8 mt-30 px-4 md:flex-row md:gap-16">
         {/* AI Assistant Header with Buttons */}
         <div className="flex items-center justify-between gap-3 px-6">
           <div className="flex items-center gap-3">
