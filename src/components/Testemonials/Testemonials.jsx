@@ -8,13 +8,13 @@ const Testimonials = () => (
     whileInView="visible"
     viewport={{ once: true }}
     variants={sectionVariants}
-    className="py-16 md:py-24"
+    className="py-10 md:py-12"
   >
     <div className="container mx-auto px-4">
-      <h2 className="mb-4 text-center text-primary text-3xl font-bold">
+      <h2 className="mb-2 sm:mb-4 text-center text-primary">
         What Our Users Say
       </h2>
-      <p className="mb-12 text-center text-lg text-gray-600">
+      <p className="mb-6 sm:mb-12 text-center text-lg">
         Real stories from real people
       </p>
       <motion.div

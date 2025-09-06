@@ -13,11 +13,11 @@ import {
 } from "lucide-react";
 
 const Footer = () => (
-  <footer className="bg-neutral-dark text-gray-300 py-16">
-    <div className="container mx-auto px-4">
-      <div className="grid gap-12 md:grid-cols-4">
+  <footer className="bg-neutral-dark text-light-gray py-4 sm:py-8">
+    <div className="px-4 sm:px-8">
+      <div className="grid gap-6 sm:gap-12 md:grid-cols-4">
         <div>
-          <a href="#" className="flex items-center">
+          <a href="/" className="flex items-center">
             <div className="bg-gradient-accent p-3 rounded-md mr-2">
               <img src={Logo} className="h-4 w-4" alt="DOCCA Logo" />
             </div>
@@ -29,10 +29,10 @@ const Footer = () => (
           </p>
         </div>
         <div>
-          <h4 className="mb-4 text-lg font-semibold text-white">Quick Links</h4>
+          <h4 className="mb-2 sm:mb-4 text-white">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="/about" className="hover:text-white">
                 About Us
               </a>
             </li>
@@ -54,7 +54,7 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h4 className="mb-4 text-lg font-semibold text-white">Support</h4>
+          <h4 className="mb-2 sm:mb-4 text-white">Support</h4>
           <ul className="space-y-2 text-sm">
             <li>
               <a href="#" className="hover:text-white">
@@ -67,14 +67,14 @@ const Footer = () => (
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="/health-tips" className="hover:text-white">
                 Health Tips
               </a>
             </li>
           </ul>
         </div>
         <div>
-          <h4 className="mb-4 text-lg font-semibold text-white">Contact</h4>
+          <h4 className="mb-2 sm:mb-4 text-white">Contact</h4>
           <ul className="space-y-2 text-sm">
             <li className="flex items-center space-x-2">
               <a
@@ -96,7 +96,8 @@ const Footer = () => (
                 <span>+234 800 DOCCA</span>
               </a>
             </li>
-            <li className="flex items-center space-x-4 pt-2">
+            <h4 className="text-white">Follow Us</h4>
+            <li className="flex items-center text-primary space-x-4 pt-2">
               <a href="#" className="hover:scale-105">
                 <Twitter size={20} />
               </a>
@@ -116,10 +117,10 @@ const Footer = () => (
           </ul>
         </div>
       </div>
-      <div className="mt-12 text-center text-sm">
-        <p>&copy; 2024 DOCCA. All rights reserved.</p>
+      <div className="mt-8 sm:mt-12 text-center text-sm">
+        <p>&copy; 2025 DOCCA. All rights reserved.</p>
         <div className="bg-warning/10 mt-4 inline-block px-2 py-2 rounded-md">
-          <div className="flex items-center justify-center space-x-2 text-warning">
+          <div className="flex flex-col sm:flex-row items-center justify-center space-x-2 text-warning">
             <ShieldAlert size={16} />
             <p className="text-xs">
               DOCCA is a guide, not a replacement for professional medical care.

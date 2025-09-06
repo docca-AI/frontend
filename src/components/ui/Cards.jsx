@@ -1,3 +1,4 @@
+import { sub } from "framer-motion/client";
 import { cardVariants } from "./Animation";
 import { motion } from "framer-motion";
 
@@ -47,4 +48,16 @@ const TestimonialCard = ({ name, rating, quote }) => {
   );
 };
 
-export { FeatureCard, TestimonialCard };
+const SelfCareCard = ({ title, description }) => (
+  <motion.div
+    variants={cardVariants}
+    className="shadow-md transition hover:shadow-lg hover:scale-105 duration-200"
+  >
+        <div className="bg-white p-4 rounded-lg shadow">
+          <h4 className="text-secondary mb-1">{title}</h4>
+          <p className="text-xs text-mid-gray">{description}</p>
+        </div>
+  </motion.div>
+);
+
+export { FeatureCard, TestimonialCard, SelfCareCard };

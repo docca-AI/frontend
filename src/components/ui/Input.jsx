@@ -38,7 +38,7 @@ export function DropdownInput({ value, onChange, options = [], placeholder = "Se
 // Voice Input (with icon)
 export function VoiceInput({ value, onChange, placeholder = "Speak or type symptoms...", onMicClick }) {
   return (
-    <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 w-full focus-within:ring-2 focus-within:ring-primary">
+    <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 w-full focus-within:ring-1 focus-within:ring-primary">
       <input
         type="text"
         className="flex-1 outline-none"
@@ -52,8 +52,7 @@ export function VoiceInput({ value, onChange, placeholder = "Speak or type sympt
         onClick={onMicClick}
         aria-label="Start voice input"
       >
-        {/* Simple mic icon (SVG) */}
-        {<Mic color="neutral-dark" />}
+        {<Mic text="neutral-dark" />}
       </button>
     </div>
   );

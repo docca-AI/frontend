@@ -15,11 +15,11 @@ const WhyChooseUs = () => (
     whileInView="visible"
     viewport={{ once: true }}
     variants={sectionVariants}
-    className="bg-[#E5E7EB] py-16 md:py-24"
+    className="bg-[#F9FAFB] py-10 md:py-12"
   >
     <div className="container mx-auto px-4">
-      <h2 className="mb-4 text-center text-primary">Why Choose DOCCA?</h2>
-      <p className="mb-12 text-center text-lg text-gray-600">
+      <h2 className="mb-2 sm:mb-4 text-center text-primary">Why Choose DOCCA?</h2>
+      <p className="mb-8 sm:mb-12 text-center text-lg">
         Healthcare made accessible for everyone
       </p>
       <motion.div
