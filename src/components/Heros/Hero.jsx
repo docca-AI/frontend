@@ -10,9 +10,9 @@ const Hero = () => (
     initial="hidden"
     whileInView="visible"
     viewport={{ once: true }}
-    className="bg-[#eaf1f7] py-16 md:py-24"
+    className="bg-gradient-to-br from-[#EFF6FF] to-[#F0FDF4] px-4 sm:px-0 py-10 md:py-12"
   >
-    <div className="container flex flex-col items-center gap-8 px-4 md:flex-row md:gap-16">
+    <div className="container flex flex-col items-center gap-8 md:flex-row md:gap-16">
       <motion.div
         variants={{
           hidden: { opacity: 0, x: -50 },

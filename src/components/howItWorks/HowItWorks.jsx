@@ -13,13 +13,13 @@ const HowItWorks = () => (
     whileInView="visible"
     viewport={{ once: true }}
     variants={sectionVariants}
-    className="py-16 md:py-24"
+    className="py-10 md:py-12"
   >
     <div className="container mx-auto px-12">
-      <h2 className="mb-4 text-center text-5xl text-primary font-bold">
+      <h2 className="mb-2 sm:mb-4 text-center text-primary">
         How DOCCA Works
       </h2>
-      <p className="mb-12 text-center text-2xl">
+      <p className="md-8 sm:mb-12 text-center text-lg">
         Get healthcare assistance in just 3 simple steps
       </p>
       <motion.div
