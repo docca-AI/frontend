@@ -106,6 +106,16 @@ button {
 cursor: pointer;
 }
 
+/* Hide scrollbar but keep scrolling */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* Gradient accent utility */
 .bg-gradient-accent {
   background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));

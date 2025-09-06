@@ -7,7 +7,8 @@ export default function Button({
   const base = `flex justify-center items-center rounded-md font-medium transition duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer ${className}`;
 
   const sizes = {
-    sm: "px-3 py-1 text-sm",
+    xs: "px-3 py-1 text-sm",
+    sm: "px-3 py-1.5 text-sm",
     md: "px-4 py-2 text-base",
     lg: "px-4 py-3 text-base",
     xl: "px-6 py-3 text-lg",
