@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Mic, Send, Phone, MessageCircle } from "lucide-react";
+import { X, Mic, Send, Phone } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Bot from "../../assets/images/Bot.svg";
 import Leaf from "../../assets/images/leaf.svg";
@@ -10,6 +10,8 @@ import WhatsAppIcon from "../../assets/images/WhatsApp.svg";
 import Button from "../ui/Button";
 import { VoiceInput } from "../ui/Input";
 import { SelfCareCard } from "../ui/Cards";
+import SelfCare from "./selfCafe/SelfCare";
+import RecommendedDoctors from "./selfCafe/RecommendedDoctors";
 
 const CheckSymptoms = () => {
   const navigate = useNavigate();
@@ -22,8 +24,8 @@ const CheckSymptoms = () => {
         exit={{ opacity: 0, scale: 0.95 }}
         className="container mt-30"
       >
-        <div className="rounded-2xl shadow-2xl mx-auto flex flex-col h-[80vh] mb-1">
-          <div className="container flex items-center justify-between w-full">
+        <div className="rounded-2xl shadow-2xl mx-auto flex flex-col h-[80vh] mb-1 ">
+          <div className="container flex items-center justify-between py-2 border-b border-light-gray shadow-b shadow-lg w-full">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                 <img src={Bot} alt="Bot" />
@@ -40,9 +42,9 @@ const CheckSymptoms = () => {
               <X className="w-5 h-5 text-gray-500" />
             </button>
           </div>
-          <div className="divider w-full"></div>
 
-          <div className="flex-1 overflow-y-auto space-y-4 scrollbar-hide">
+          {/* Chat Messages */}
+          <div className="flex-1 py-4 overflow-y-auto space-y-4 scrollbar-hide">
             <div className="container">
               {/* First DOCCA Message */}
               <div className="flex justify-start">
@@ -71,7 +73,7 @@ const CheckSymptoms = () => {
               </div>
 
               {/* User Response */}
-              <div className="flex justify-end">
+              <div className="flex justify-end py-6">
                 <div className="bg-light-gray px-3 py-2 rounded-lg rounded-tr-sm">
                   <p>Start Health Check</p>
                 </div>
@@ -108,7 +110,7 @@ const CheckSymptoms = () => {
               </div>
 
               {/* User Age Response */}
-              <div className="flex justify-end">
+              <div className="flex justify-end py-6">
                 <div className="bg-light-gray px-3 py-2 rounded-lg rounded-tr-sm">
                   <p>26-35, Male</p>
                 </div>
@@ -132,59 +134,13 @@ const CheckSymptoms = () => {
             <div className="divider w-full"></div>
 
             <div className="container">
-              <div className="bg-green-50 border-l-4 border-secondary border rounded-lg px-8 py-4">
-                <div className="flex items-center space-x-2">
-                  <div className="">
-                    <img src={Leaf} alt="Leaf" width={20} height={20} />
-                  </div>
-                  <h2>Self-Care</h2>
-                </div>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <SelfCareCard
-                    title="Rest & Hydration"
-                    description="Get plenty of rest and drink lots of fluids. ORS solution can help with dehydration."
-                  />
-                  <SelfCareCard
-                    title="Temperature Control"
-                    description="Use cool compresses and take paracetamol for fever management."
-                  />
-                </div>
-              </div>
+              {/* Self-Care Recommendations */}
+              <SelfCare />
 
-              <div className="mt-6">
-                <h2 className="mb-3">Recommended Doctors Near You</h2>
-                <div className="bg-white border border-gray-200 rounded-lg p-4">
-                  <div className="flex justify-start">
-                    <div className="flex items-start space-x-3">
-                      <img
-                        src={DrAO}
-                        alt="Dr. Adebayo Ogundimu"
-                        className="w-12 h-12 rounded-full object-cover"
-                      />
-                      <div>
-                        <div className="flex-1">
-                          <h4 className=" text-primary">
-                            Dr. Adebayo Ogundimu
-                          </h4>
-                          <p>General Practitioner • 2.5km away</p>
-                        </div>
-                        <div className="flex space-x-2">
-                          <Button variant="secondary" size="sm">
-                            <img src={WhatsAppIcon} className="mr-2" width={12} height={12} />
-                            <span>WhatsApp</span>
-                          </Button>
-                          <Button variant="primary" size="sm">
-                            <Phone className="mr-2 w-3 h-3" />
-                            <span>Call</span>
-                          </Button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/* Recommended Doctors */}
+              <RecommendedDoctors />
             </div>
-            <div className="divider"></div>
+            {/* <div className="divider"></div> */}
           </div>
 
           {/* Input Area */}

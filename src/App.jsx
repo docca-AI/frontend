@@ -10,9 +10,9 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="min-h-screen scrollbar-hide">
+    <div className="min-h-screen">
       <Navbar />
-      <main className="mt-[80px] scrollbar-hide">
+      <main className="mt-[80px]">
         <Routes>
           {/* Home Page */}
           <Route
