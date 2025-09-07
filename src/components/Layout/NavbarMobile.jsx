@@ -1,4 +1,3 @@
-// src/components/layout/Navbar.jsx
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Button from "../ui/Button";
@@ -8,14 +7,6 @@ import SideDrawer from "../ui/SideDrawer";
 
 const NavbarMobile = () => {
   const [language, setLanguage] = useState("EN");
-
-  const navItems = [
-    { label: "Home", href: "/" },
-    { label: "Check Symptoms", href: "/symptoms" },
-    { label: "Find a Doctor", href: "/find-doctor" },
-    { label: "Health Tips", href: "/health-tips" },
-    { label: "About Us", href: "/about" },
-  ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">

@@ -11,7 +11,7 @@ function SideDrawer() {
     { label: "Health Tips", href: "/health-tips" },
     { label: "About Us", href: "/about" },
   ];
-  
+
   return (
     <div className="drawer-side z-50">
       <label htmlFor="mobile-drawer" className="drawer-overlay"></label>
