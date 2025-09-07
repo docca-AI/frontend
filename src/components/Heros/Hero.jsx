@@ -12,7 +12,7 @@ const Hero = () => (
     viewport={{ once: true }}
     className="bg-gradient-to-br from-[#EFF6FF] to-[#F0FDF4] px-4 sm:px-0 py-10 md:py-12"
   >
-    <div className="container flex flex-col items-center gap-8 md:flex-row md:gap-16">
+    <div className="container flex flex-col items-center gap-8 sm:flex-row sm:gap-16">
       <motion.div
         variants={{
           hidden: { opacity: 0, x: -50 },
@@ -20,7 +20,7 @@ const Hero = () => (
         }}
         className="w-full md:w-1/2"
       >
-        <div className="md:w-120 ">
+        <div>
           <h1 className="text-primary mb-4  leading-tight">
             Your Health, Your Language, Your Community
           </h1>
