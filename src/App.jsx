@@ -1,4 +1,5 @@
-import Navbar from "./components/Layout/Navbar";
+import { Route, Routes } from "react-router-dom"; 
+import Header from "./components/Layout/Header";
 import Hero from "./components/Heros/Hero";
 import HowItWorks from "./components/howItWorks/HowItWorks";
 import WhyChooseUs from "./components/whyChooseUS/WhyChooseUs";
@@ -6,12 +7,11 @@ import Testimonials from "./components/Testemonials/Testemonials";
 import CTA from "./components/CTA/CTA";
 import Footer from "./components/Footer/Footer";
 import CheckSymptoms from "./components/symptoms/CheckSymptoms";
-import { Route, Routes } from "react-router-dom"; 
 
 function App() {
   return (
     <div className="min-h-screen">
-      <Navbar />
+      <Header />
       <main className="mt-[80px]">
         <Routes>
           {/* Home Page */}
