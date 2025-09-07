@@ -55,7 +55,6 @@ h1 {
   font-family: var(--font-heading-1);
   font-weight: 700;
   font-size: 36px;
-  /* color: var(--color-primary); */
 }
 
 h2 {
@@ -78,7 +77,6 @@ h4 {
   font-family: var(--font-heading-4);
   font-weight: 600;
   font-size: 20px;
-  /* color: var(--color-primary); */
 }
 
 /* Body text */
@@ -93,8 +91,6 @@ body {
 a {
   font-family: var(--font-body);
   font-weight: 400;
-  /* font-size: 16px; */
-  /* color: var(--color-primary); */
   text-decoration: none;
   transition: color 0.2s;
 }

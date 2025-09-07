@@ -8,7 +8,7 @@ const Testimonials = () => (
     whileInView="visible"
     viewport={{ once: true }}
     variants={sectionVariants}
-    className="py-10 md:py-12"
+    className="py-10 md:py-12 px-4 sm:px-8"
   >
     <div className="container mx-auto px-4">
       <h2 className="mb-2 sm:mb-4 text-center text-primary">

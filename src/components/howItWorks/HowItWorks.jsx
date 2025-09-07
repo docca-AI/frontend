@@ -14,7 +14,7 @@ const HowItWorks = () => (
     whileInView="visible"
     viewport={{ once: true }}
     variants={sectionVariants}
-    className="py-10 md:py-12"
+    className="py-10 md:py-12 px-4 sm:px-8"
   >
     <div className="container mx-auto px-12">
       <h2 className="mb-2 sm:mb-4 text-center text-primary">How DOCCA Works</h2>
