@@ -18,7 +18,9 @@ const WhyChooseUs = () => (
     className="bg-[#F9FAFB] py-10 md:py-12"
   >
     <div className="container mx-auto px-4">
-      <h2 className="mb-2 sm:mb-4 text-center text-primary">Why Choose DOCCA?</h2>
+      <h2 className="mb-2 sm:mb-4 text-center text-primary">
+        Why Choose DOCCA?
+      </h2>
       <p className="mb-8 sm:mb-12 text-center text-lg">
         Healthcare made accessible for everyone
       </p>
@@ -27,7 +29,7 @@ const WhyChooseUs = () => (
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid gap-8 md:grid-cols-3"
+        className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
       >
         <FeatureCard
           bgColor="bg-primary"
