@@ -12,10 +12,6 @@
   --color-mid-gray: var(--color-mid-gray);
   --color-light-gray: var(--color-light-gray);
   --bg-gradient-accent: var(--bg-gradient-accent);
-  --bg-primary: var(--bg-primary);
-  --bg-secondary: var(--bg-secondary);
-  --bg-tertiary: var(--bg-tertiary);
-  --bg-accent: var(--bg-accent);
 }
 
 :root {
@@ -28,12 +24,6 @@
   --color-warning: #F39C12;
   --color-error: #E74C3C;
   --color-info: #3498DB;
-
-  --bg-primary: #F9FAFB;
-  --bg-secondary: #FFFFFF;
-  --bg-tertiary: #333333;
-  --bg-accent: #eaf1f7;
-
 
   --font-heading-1: 'Poppins', sans-serif;
   --font-heading-2: 'Poppins', sans-serif;
