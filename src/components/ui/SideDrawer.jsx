@@ -2,14 +2,20 @@ import { X } from "lucide-react";
 import Button from "../ui/Button";
 import Logo from "../../assets/images/Logo.png";
 import { NavLink } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
+import { APP_CONTENT } from "../../language/content";
+
 
 function SideDrawer() {
+    const { language } = useLanguage();
+
+
   const navItems = [
-    { label: "Home", href: "/" },
-    { label: "Check Symptoms", href: "/symptoms" },
-    { label: "Find a Doctor", href: "/find-doctor" },
-    { label: "Health Tips", href: "/health-tips" },
-    { label: "About Us", href: "/about" },
+    { label: APP_CONTENT.NAV_HOME[language], href: "/" },
+    { label: APP_CONTENT.NAV_SYMPTOMS[language], href: "/symptoms" },
+    { label: APP_CONTENT.NAV_DOCTOR[language], href: "/find-doctor" },
+    { label: APP_CONTENT.NAV_TIPS[language], href: "/health-tips" },
+    { label: APP_CONTENT.NAV_ABOUT[language], href: "/about" },
   ];
 
   return (

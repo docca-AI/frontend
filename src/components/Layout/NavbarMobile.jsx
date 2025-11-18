@@ -4,9 +4,11 @@ import Button from "../ui/Button";
 import Logo from "../../assets/images/Logo.png";
 import { NavLink } from "react-router-dom";
 import SideDrawer from "../ui/SideDrawer";
+import { useLanguage } from "../../context/LanguageContext";
 
 const NavbarMobile = () => {
-  const [language, setLanguage] = useState("EN");
+   const { language, toggleLanguage } = useLanguage();
+
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
@@ -40,31 +42,23 @@ const NavbarMobile = () => {
         </NavLink>
 
         {/* Language Switch Right */}
-        <div className="flex items-center space-x-4">
-          <div className="flex items-center space-x-2">
-            <span className="text-sm font-medium">EN</span>
-            <button
-              onClick={() => setLanguage(language === "EN" ? "PID" : "EN")}
-              className="relative inline-flex h-4 w-6 items-center bg-light-gray rounded-full transition-colors duration-300 cursor-pointer"
-            >
-              <span
-                className={`inline-block h-2 w-2 transform rounded-full transition-transform duration-300 ${
-                  language === "EN"
-                    ? "translate-x-1 bg-primary"
-                    : "translate-x-3 bg-secondary"
-                }`}
-              />
-            </button>
-            <span className="text-sm font-medium">PID</span>
-          </div>
-          <div className="hidden md:flex items-center space-x-2">
-            <Button variant="tertiary" size="md">
-              LogIn
-            </Button>
-            <Button variant="secondary" size="md">
-              SignUp
-            </Button>
-          </div>
+        <div className="flex items-center space-x-2">
+          <span className="text-sm font-medium">EN</span>
+          <button
+            // Use the toggleLanguage function from context
+            onClick={toggleLanguage}
+            className="relative inline-flex h-6 w-11 items-center bg-light-gray rounded-full transition-colors duration-300 cursor-pointer"
+          >
+            <span
+              className={`inline-block h-4 w-4 transform rounded-full transition-transform duration-300 ${
+                // Check against the global 'language' state
+                language === "EN"
+                  ? "translate-x-1 bg-primary"
+                  : "translate-x-6 bg-secondary"
+              }`}
+            />
+          </button>
+          <span className="text-sm font-medium">PID</span>
         </div>
       </div>
     </nav>

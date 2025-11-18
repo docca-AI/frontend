@@ -1,17 +1,19 @@
-import { useState } from "react";
 import Button from "../ui/Button";
 import Logo from "../../assets/images/Logo.png";
 import { NavLink } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
+import { APP_CONTENT } from "../../language/content";
 
 function NavbarDesktop() {
-  const [language, setLanguage] = useState("EN");
+  // Use the global context state and toggler
+  const { language, toggleLanguage } = useLanguage();
 
   const navItems = [
-    { label: "Home", href: "/" },
-    { label: "Check Symptoms", href: "/symptoms" },
-    { label: "Find a Doctor", href: "/find-doctor" },
-    { label: "Health Tips", href: "/health-tips" },
-    { label: "About Us", href: "/about" },
+    { label: APP_CONTENT.NAV_HOME[language], href: "/" },
+    { label: APP_CONTENT.NAV_SYMPTOMS[language], href: "/symptoms" },
+    { label: APP_CONTENT.NAV_DOCTOR[language], href: "/find-doctor" },
+    { label: APP_CONTENT.NAV_TIPS[language], href: "/health-tips" },
+    { label: APP_CONTENT.NAV_ABOUT[language], href: "/about" },
   ];
 
   return (
@@ -49,11 +51,13 @@ function NavbarDesktop() {
         <div className="flex items-center space-x-2">
           <span className="text-sm font-medium">EN</span>
           <button
-            onClick={() => setLanguage(language === "EN" ? "PID" : "EN")}
+            // Use the toggleLanguage function from context
+            onClick={toggleLanguage}
             className="relative inline-flex h-6 w-11 items-center bg-light-gray rounded-full transition-colors duration-300 cursor-pointer"
           >
             <span
               className={`inline-block h-4 w-4 transform rounded-full transition-transform duration-300 ${
+                // Check against the global 'language' state
                 language === "EN"
                   ? "translate-x-1 bg-primary"
                   : "translate-x-6 bg-secondary"
@@ -64,10 +68,10 @@ function NavbarDesktop() {
         </div>
 
         <Button variant="tertiary" size="md">
-          LogIn
+          Log In
         </Button>
         <Button variant="secondary" size="md">
-          SignUp
+          Sign Up
         </Button>
       </div>
     </div>

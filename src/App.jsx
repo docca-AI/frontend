@@ -1,11 +1,11 @@
-import { Route, Routes } from "react-router-dom"; 
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Layout/Header";
-import Hero from "./components/Heros/Hero";
-import HowItWorks from "./components/howItWorks/HowItWorks";
-import WhyChooseUs from "./components/whyChooseUS/WhyChooseUs";
-import Testimonials from "./components/Testemonials/Testemonials";
-import CTA from "./components/CTA/CTA";
-import Footer from "./components/Footer/Footer";
+import Hero from "./components/Layout/Heros/Hero";
+import HowItWorks from "./components/Layout/howItWorks/HowItWorks";
+import WhyChooseUs from "./components/Layout/whyChooseUS/WhyChooseUs";
+import Testimonials from "./components/Layout/Testemonials/Testemonials";
+import CTA from "./components/Layout/CTA/CTA";
+import Footer from "./components/Layout/Footer/Footer";
 import CheckSymptoms from "./components/symptoms/CheckSymptoms";
 
 function App() {
