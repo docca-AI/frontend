@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import HeroImg from "../../../assets/images/Hero-img.svg";
+import HeroImg from "@/assets/images/Hero-img.svg";
 import { Stethoscope, Search } from "lucide-react";
-import Button from "../../ui/Button";
-import { useLanguage } from "../../../context/LanguageContext";
-import { APP_CONTENT } from "../../../language/content";
+import Button from "@/components/ui/Button";
+import { useLanguage } from "@/context/LanguageContext";
+import { APP_CONTENT } from "@/language/content";
 
 const Hero = () => {
   const { language } = useLanguage();

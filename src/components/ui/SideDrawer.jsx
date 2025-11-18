@@ -1,9 +1,9 @@
 import { X } from "lucide-react";
-import Button from "../ui/Button";
-import Logo from "../../assets/images/Logo.png";
+import Button from "@/components/ui/Button";
+import Logo from "@/assets/images/Logo.png";
 import { NavLink } from "react-router-dom";
-import { useLanguage } from "../../context/LanguageContext";
-import { APP_CONTENT } from "../../language/content";
+import { useLanguage } from "@/context/LanguageContext";
+import { APP_CONTENT } from "@/language/content";
 
 
 function SideDrawer() {

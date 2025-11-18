@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import Button from "../../ui/Button";
-import Float from "../../../assets/images/float.svg";
+import Button from "@/components/ui/Button";
+import Float from "@/assets/images/float.svg";
 import { sectionVariants } from "../../ui/Animation";
-import { useLanguage } from "../../../context/LanguageContext";
-import { APP_CONTENT } from "../../../language/content";
+import { useLanguage } from "@/context/LanguageContext";
+import { APP_CONTENT } from "@/language/content";
 
 const CTA = () => {
   const { language } = useLanguage();

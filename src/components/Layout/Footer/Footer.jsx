@@ -1,5 +1,5 @@
-import Logo from "../../../assets/images/Logo.png";
-import WhatsApp from "../../../assets/images/WhatsApp.svg";
+import Logo from "@/assets/images/Logo.png";
+import WhatsApp from "@/assets/images/WhatsApp.svg";
 import {
   Mail,
   X,
@@ -11,8 +11,8 @@ import {
   Youtube,
   ShieldAlert,
 } from "lucide-react";
-import { useLanguage } from "../../../context/LanguageContext";
-import { APP_CONTENT } from "../../../language/content";
+import { useLanguage } from "@/context/LanguageContext";
+import { APP_CONTENT } from "@/language/content";
 
 const Footer = () => {
   const { language } = useLanguage();

@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import { Mic } from "lucide-react";
-import Heart from "../../../assets/images/Heart.svg";
-import Flag from "../../../assets/images/flag.svg";
+import Heart from "@/assets/images/Heart.svg";
+import Flag from "@/assets/images/flag.svg";
 import {
   cardVariants,
   sectionVariants,
   staggerContainer,
 } from "../../ui/Animation";
-import { useLanguage } from "../../../context/LanguageContext";
-import { APP_CONTENT } from "../../../language/content";
+import { useLanguage } from "@/context/LanguageContext";
+import { APP_CONTENT } from "@/language/content";
 
 const HowItWorks = () => {
   const { language } = useLanguage();

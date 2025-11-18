@@ -1,15 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Chat from "../../../assets/images/chat.svg";
-import Mic from "../../../assets/images/Mic.svg";
-import Settings from "../../../assets/images/settings.svg";
-import Location from "../../../assets/images/Location.svg";
-import Signal from "../../../assets/images/signal.svg";
-import Shield from "../../../assets/images/shield.svg";
-import { sectionVariants, staggerContainer } from "../../ui/Animation";
+import Chat from "@/assets/images/chat.svg";
+import Mic from "@/assets/images/Mic.svg";
+import Settings from "@/assets/images/settings.svg";
+import Location from "@/assets/images/Location.svg";
+import Signal from "@/assets/images/signal.svg";
+import Shield from "@/assets/images/shield.svg";
+import { sectionVariants, staggerContainer } from "@/components/ui/Animation";
 import { FeatureCard } from "../../ui/Cards";
-import { useLanguage } from "../../../context/LanguageContext";
-import { APP_CONTENT } from "../../../language/content";
+import { useLanguage } from "@/context/LanguageContext";
+import { APP_CONTENT } from "@/language/content";
 
 const WhyChooseUs = () => {
   const { language } = useLanguage();

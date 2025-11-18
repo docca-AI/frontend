@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { sectionVariants, staggerContainer } from "../../ui/Animation";
-import { TestimonialCard } from "../../ui/Cards";
-import { useLanguage } from "../../../context/LanguageContext";
-import { APP_CONTENT } from "../../../language/content";
+import { TestimonialCard } from "@/components/ui/Cards";
+import { useLanguage } from "@/context/LanguageContext";
+import { APP_CONTENT } from "@/language/content";
 
 const Testimonials = () => {
   const { language } = useLanguage();

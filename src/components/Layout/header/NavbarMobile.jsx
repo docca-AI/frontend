@@ -1,14 +1,11 @@
-import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import Button from "../ui/Button";
-import Logo from "../../assets/images/Logo.png";
+import Logo from "@/assets/images/Logo.png";
 import { NavLink } from "react-router-dom";
-import SideDrawer from "../ui/SideDrawer";
-import { useLanguage } from "../../context/LanguageContext";
+import SideDrawer from "@/components/ui/SideDrawer";
+import { useLanguage } from "@/context/LanguageContext";
 
 const NavbarMobile = () => {
-   const { language, toggleLanguage } = useLanguage();
-
+  const { language, toggleLanguage } = useLanguage();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
